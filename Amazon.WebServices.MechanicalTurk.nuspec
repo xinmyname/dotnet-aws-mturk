@@ -1,9 +1,12 @@
-<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <id>CWS.Utility.SharePoint</id>
-    <version>3.0.1</version>
-    <authors>Andy Sherwood</authors>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Provides abstractions for working with SharePoint 2010</description>
-  </metadata>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Amazon.WebServices.MechanicalTurk</id>
+        <version>1.5.0</version>
+        <authors>Andy Sherwood</authors>
+        <owners>Amazon</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>.Net SDK for Amazon Mechanical Turk</description>
+        <copyright>Copyright © Amazon.com 2007 - 2011</copyright>
+    </metadata>
 </package>
