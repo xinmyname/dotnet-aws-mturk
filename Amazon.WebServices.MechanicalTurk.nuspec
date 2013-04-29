@@ -1,0 +1,9 @@
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>CWS.Utility.SharePoint</id>
+    <version>3.0.1</version>
+    <authors>Andy Sherwood</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides abstractions for working with SharePoint 2010</description>
+  </metadata>
+</package>
