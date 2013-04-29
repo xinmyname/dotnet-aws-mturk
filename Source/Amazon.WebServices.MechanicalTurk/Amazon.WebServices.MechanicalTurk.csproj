@@ -12,7 +12,7 @@
     <AssemblyName>Amazon.WebServices.MechanicalTurk</AssemblyName>
     <SignAssembly>false</SignAssembly>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
@@ -43,6 +43,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\Amazon.WebServices.MechanicalTurk.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -52,11 +53,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\Amazon.WebServices.MechanicalTurk.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit">
-      <HintPath>..\..\..\..\..\..\..\Program Files\NUnit 2.5.10\bin\net-2.0\nunit.exe</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -106,12 +105,6 @@
     <Compile Include="Misc\XmlUtil.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Amazon.WebServices.MechanicalTurk.Domain\Amazon.WebServices.MechanicalTurk.Domain.csproj">
-      <Project>{F260F434-6789-4E55-8548-E9F477E8A0E5}</Project>
-      <Name>Amazon.WebServices.MechanicalTurk.Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\AnswerKey.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -153,6 +146,12 @@
   <ItemGroup>
     <None Include="Resources\AWSMechanicalTurkRequester.wsdl" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Amazon.WebServices.MechanicalTurk.Domain\Amazon.WebServices.MechanicalTurk.Domain.csproj">
+      <Project>{f260f434-6789-4e55-8548-e9f477e8a0e5}</Project>
+      <Name>Amazon.WebServices.MechanicalTurk.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -162,6 +161,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "$(ProjectDir)..\..\Lib"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
