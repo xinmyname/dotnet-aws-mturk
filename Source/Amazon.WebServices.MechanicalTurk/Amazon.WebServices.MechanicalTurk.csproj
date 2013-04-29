@@ -68,6 +68,13 @@
     <Compile Include="Advanced\ITurkConfig.cs" />
     <Compile Include="Advanced\ITurkOperations.cs" />
     <Compile Include="Advanced\LeakyBucketRequestThrottler.cs" />
+    <Compile Include="Domain\AnswerKey.cs" />
+    <Compile Include="Domain\AWSMechanicalTurkRequester.cs" />
+    <Compile Include="Domain\ExternalQuestion.cs" />
+    <Compile Include="Domain\FormattedContentXHTMLSubset.cs" />
+    <Compile Include="Domain\HTMLQuestion.cs" />
+    <Compile Include="Domain\QuestionForm.cs" />
+    <Compile Include="Domain\QuestionFormAnswers.cs" />
     <Compile Include="Exceptions\HitLayoutDoesNotExistException.cs" />
     <Compile Include="ITransportProtocol.cs" />
     <Compile Include="Advanced\PropertyFormatter.cs" />
@@ -145,12 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AWSMechanicalTurkRequester.wsdl" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Amazon.WebServices.MechanicalTurk.Domain\Amazon.WebServices.MechanicalTurk.Domain.csproj">
-      <Project>{f260f434-6789-4e55-8548-e9f477e8a0e5}</Project>
-      <Name>Amazon.WebServices.MechanicalTurk.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
